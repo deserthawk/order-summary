@@ -13,6 +13,11 @@ body {
     font-weight: 500;
     font-size: 16px;
 }
+@media (max-width:375px) {
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+}
 
 .summary-container {
     max-width: var(--summary-container-width);
@@ -62,6 +67,11 @@ body {
     width: 35px;
 }
 
+.summary-annual a:hover{
+    text-decoration: none;
+    color:hsla(245, 75%, 52%, 0.705);
+}
+
 .summary-annual-text {
     display: flex;
     flex-direction: column;
@@ -98,8 +108,12 @@ body {
     box-shadow: 0px 5px 10px 5px rgb(0 0 0 / 19%);
 }
 
+.summary-button:hover{
+    background-color: hsla(245, 75%, 52%, 0.705);
+    cursor: pointer;
+}
+
 .summary-cancel{
-    
     width: 75%;
     height: 35px;
     margin: 15px auto 15px auto;
@@ -110,4 +124,12 @@ body {
     align-items: center;
     color:hsl(224, 23%, 55%);
     font-size: 12px;
+    cursor: pointer;
+}
+.summary-cancel label{
+    cursor: pointer;
+}
+.summary-cancel:hover{
+    color:black;
+    font-weight: 700;
 }
