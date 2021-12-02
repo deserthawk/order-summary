@@ -1,0 +1,113 @@
+:root {
+    --summary-container-width: 320px;
+    --summary-hero-height: 160px;
+    --summary-container-radius: 12px;
+    --summary-container-margin: 30px;
+}
+
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.summary-container {
+    max-width: var(--summary-container-width);
+    min-width: var(--summary-container-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: var(--summary-container-radius);
+}
+
+.summary-hero {
+    background-image: url('images/illustration-hero.svg');
+    background-size: var(--summary-container-width) var(--summary-hero-height);
+    min-height: var(--summary-hero-height);
+    border-radius: var(--summary-container-radius) var(--summary-container-radius) 0px 0px;
+}
+
+.summary-title {
+    margin: var(--summary-container-margin) auto 0px auto;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.summary-info {
+    margin: 15px auto 0px auto;
+    width: 70%;
+    font-size: 12px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.summary-annual {
+    width: 75%;
+    height: 70px;
+    margin: 15px auto 0px auto;
+    background-color: hsla(225, 100%, 94%, 0.5);
+    border-radius: var(--summary-container-radius);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+}
+
+.summary-annual img {
+    width: 35px;
+}
+
+.summary-annual-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-annual-text-1 {
+    font-weight: 700;
+}
+
+.summary-annual-text-2 {
+    color: hsl(224, 23%, 55%);
+    margin-top: 3px;
+}
+
+.summary-annual-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+}
+
+.summary-button{
+    background-color: hsl(245, 75%, 52%);
+    width: 75%;
+    height: 35px;
+    margin: 25px auto 0px auto;
+    text-align: center;
+    border-radius: var(--summary-container-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(225, 100%, 98%);
+    font-size: 12px;
+    box-shadow: 0px 5px 10px 5px rgb(0 0 0 / 19%);
+}
+
+.summary-cancel{
+    
+    width: 75%;
+    height: 35px;
+    margin: 15px auto 15px auto;
+    text-align: center;
+    border-radius: var(--summary-container-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(224, 23%, 55%);
+    font-size: 12px;
+}
